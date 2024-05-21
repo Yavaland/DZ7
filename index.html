@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Регистрация</h1>
+
+    <form id="registrationForm">
+        <label for="username">Имя пользователя:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+        <i id="togglePassword" class="fa fa-eye"></i>
+
+        <label for="confirmPassword">Подтвердите пароль:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+        <label for="gender">Пол:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Мужской</option>
+            <option value="female">Женский</option>
+            <option value="other">Другой</option>
+        </select>
+
+        <label for="terms">Согласен с условиями</label>
+        <input type="checkbox" id="terms" name="terms" required>
+
+        <label for="countdownTime">Время обратного отсчета:</label>
+        <select id="countdownTime" name="countdownTime">
+            <option value="0">0 секунд</option>
+            <option value="1">1 секунда</option>
+            <option value="2">2 секунды</option>
+            <option value="3">3 секунды</option>
+            <option value="4">4 секунды</option>
+            <option value="5">5 секунд</option>
+        </select>
+
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+
+    <div id="successMessage" class="success"></div>
+
+    <div id="userInfo" class="user-info"></div>
+
+    <div id="countdown" class="countdown"></div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
